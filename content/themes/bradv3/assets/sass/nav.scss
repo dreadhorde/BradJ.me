@@ -1,0 +1,106 @@
+nav {
+  width: 100%;
+  background: $color-background;
+  border-bottom: 1px solid rgba(51,51,51,0.05);
+  text-align: left;
+  position: fixed;
+  -webkit-transition: -webkit-transform .1s ease-in-out;
+  transition: -webkit-transform .1s ease-in-out;
+  transition: transform .1s ease-in-out;
+  transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
+  height: 64px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  ul {
+    list-style: none;
+    padding-left: 0;
+    max-width: 1618px;
+    width: 80%;
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      font-family: $font-display;
+      font-weight: 700;
+      font-size: 1em;
+      margin: 0.25em 0;
+      width: 110px;
+      a {
+        color: $color-text;
+        transition: 0.2s;
+        position: relative;
+        &:hover {
+          color: lighten($color-text, 10%);
+          border-bottom: none;
+        }
+        &::selection {
+          color: lighten($color-text, 15%);
+        }
+      }
+    }
+  }
+  &.nav-up {
+    -webkit-transform: translateY(-64px);
+    transform: translateY(-64px)
+  }
+}
+
+nav .nav-container {
+  max-width: 1618px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+progress {
+  position: fixed;
+  left: 0;
+  top: 64px;
+  z-index: 99999;
+  width: 100%;
+  height: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: $color-link;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: $color-link;
+}
+
+progress::-moz-progress-bar {
+  background-color: $color-link;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .05rem;
+  display: block
+}
+
+.progress-bar {
+  background-color: $color-link;
+  width: 50%;
+  display: block;
+  height: inherit
+}
+
+progress {
+  display: none
+}
+
+.post-template progress {
+  display: block
+}

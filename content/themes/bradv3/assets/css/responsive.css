@@ -1,0 +1,109 @@
+@media (max-width: 1440px) {
+  .post-content {
+    font-size: 1em;
+  }
+  blockquote {
+    font-size: 1.618em;
+    line-height: 1.5;
+  }
+  input,
+  textarea {
+    font-size: 0.618em;
+    padding: 0.5em;
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 1280px) {
+  .main-header .inner {
+    padding: 1em;
+  }
+  article.excerpt {
+    -webkit-columns: 1;
+    columns: 1;
+  }
+  .post-title {
+    margin-bottom: 1em;
+    font-size: 2.618;
+  }
+  .post-content {
+    font-size: 1em;
+  }
+  blockquote {
+    font-size: 1.618;
+  }
+  h2 {
+    font-size: 1.618;
+  }
+  h3 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 1024px) {
+  .main-header.no-cover {
+    max-height: 100%;
+    height: 100%;
+  }
+  .post-content {
+    font-size: 0.618em;
+  }
+  .post,
+  .post-date {
+    width: 90%;
+  }
+}
+@media (max-width: 414px) {
+  .page-title {
+    font-size: 1.618em;
+    line-height: 1;
+  }
+  .page-description {
+    font-size: 0.382em;
+  }
+  .post-date {
+    font-size: 0.618em;
+    line-height: 21px;
+  }
+  body:not(.post-template) .post-title {
+    font-size: 1.618emcode;
+    padding-bottom: 0.25em;
+  }
+  .post-excerpt p {
+    font-size: 1;
+  }
+  .post {
+    font-size: 0.75em;
+  }
+  .post-title {
+    border-bottom-width: 8px;
+  }
+  .post-content .work .work-item h2 {
+    font-size: 36px;
+    line-height: 36px;
+    border-bottom-width: 8px;
+  }
+  .post-content .work .work-item h3 {
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 0;
+  }
+  .post-template .post-title {
+    padding-bottom: 12px;
+    font-size: 48px;
+  }
+  .post-template .post-header {
+    margin: 32px 0;
+  }
+  blockquote {
+    border-width: 8px;
+  }
+  blockquote p {
+    font-size: 0.85em;
+  }
+  blockquote p:before,
+  blockquote p:after {
+    content: '';
+  }
+  .pagination {
+    margin: 4rem auto;
+  }
+}

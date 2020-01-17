@@ -1,0 +1,46 @@
+.error-content {
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 64px;
+  padding-top: 1.618em;
+}
+
+.error-details {
+  height: 900px;
+  text-align: center;
+  line-height: 600px;
+}
+
+.error-code {
+  color: $color-link;
+  font-size: 17.942rem;
+  font-family: $font-display;
+  &::selection {
+    color: lighten($color-link, 33%);
+  }
+}
+
+.error-code, .error-description {
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 17.942rem;
+}
+
+.error-link {
+  display: block;
+  line-height: 1.618rem;
+  margin-left: 573px;
+  margin-top: -26.942rem;
+  text-align: left;
+  .go {
+    position: relative;
+    left: 0;
+    transition: 0.2s;
+  }
+}
+
+.error-link:hover {
+  .go {
+    left: 1rem;
+  }
+}

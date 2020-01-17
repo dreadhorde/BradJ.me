@@ -1,0 +1,8 @@
+{
+  "name": "bradv4",
+  "version": "1.0",
+  "engines": { "ghost-api": "v3" },
+  "author": { "email": "bradforddjohnson@gmail.com" },
+  "keywords": ["ghost-theme"],
+  "config": { "posts_per_page": 3, "image_sizes": {} }
+}

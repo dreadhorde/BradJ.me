@@ -1,0 +1,196 @@
+
+.post-template hr {
+  border-top: 13px solid $color-text;
+}
+
+.post {
+  p a, .read-more {
+    color: $color-text;
+    background: linear-gradient($color-background,$color-background),linear-gradient($color-background,$color-background),linear-gradient($color-text,$color-text);
+    background-size: .05em 2px,.05em 2px,2px 2px;
+    background-repeat: no-repeat,no-repeat,repeat-x;
+    text-shadow: .03em 0 $color-background,-.03em 0 $color-background,0 .03em $color-background,0 -.03em $color-background,.06em 0 $color-background,-.06em 0 $color-background,.09em 0 $color-background,-.09em 0 $color-background,.12em 0 $color-background,-.12em 0 $color-background,.15em 0 $color-background,-.15em 0 $color-background;
+    background-position: 0 89%,100% 89%,0 96%;
+     z-index: 2;
+    &:hover {
+      background: linear-gradient($color-background,$color-background),linear-gradient($color-background,$color-background),linear-gradient($color-link,$color-link);
+      background-size: .05em 2px,.05em 2px,2px 2px;
+      background-repeat: no-repeat,no-repeat,repeat-x;
+      text-shadow: .03em 0 $color-background,-.03em 0 $color-background,0 .03em $color-background,0 -.03em $color-background,.06em 0 $color-background,-.06em 0 $color-background,.09em 0 $color-background,-.09em 0 $color-background,.12em 0 $color-background,-.12em 0 $color-background,.15em 0 $color-background,-.15em 0 $color-background;
+      background-position: 0 89%,100% 89%,0 96%;
+    }
+  }
+}
+
+.excerpt {
+  position: relative;
+  h3:not(:first-child) + p, h2:not(:first-child) + p {
+    text-indent: 2em;
+  }
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+article {
+  &.post {
+    max-width: 1618px;
+    h2, h3, h4 {
+      clear: both;
+    }
+  }
+  &.excerpt {
+    margin-top: 0;
+    border-bottom: none;
+    -webkit-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 6.854rem;
+    column-gap: 6.854rem;
+    h2 {
+      font-size: 1.618em;
+    }
+    h3 {
+      font-size: 1.618em;
+    }
+    img {
+      display: none;
+    }
+    blockquote {
+      font-size: 1em;
+      border-width: 7px;
+      line-height: 1.2;
+      padding: 0.618em 0;
+      margin: 1.618em 0;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .hide-excerpt {
+      display: none;
+    }
+  }
+}
+
+.no-cover .page-description {
+  color: $color-text;
+}
+
+.home-template {
+  .page-title {
+    -webkit-animation: none;
+    animation: none;
+  }
+  .page-description {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+.post-date {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
+  text-transform: uppercase;
+  font-family: $font-display;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.post-title {
+  font-family: $font-display;
+  font-weight: 700;
+  font-size: 4.236em;
+  text-transform: uppercase;
+  line-height: 0.9;
+  padding-bottom: 24px;
+  margin-bottom: 1.618em;
+  border-bottom: 13px solid $color-text;
+  color: $color-link;
+  animation: none;
+  hyphens: initial;
+  &::selection {
+    color: lighten($color-link, 33%);
+  }
+}
+
+body:not(.post-template) .post-title {
+  font-size: 2.618em;
+}
+
+.excerpt {
+  code, pre, blockquote, h2, h3, h4, h5 {
+    display: none;
+  }
+  .post-title {
+    font-size: 2.618em;
+    display: block;
+  }
+}
+
+.post-template .post-header {
+  margin: 64px 0;
+}
+
+.post-excerpt > p {
+  margin-bottom: 1em;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+  hyphens: initial;
+  &:last-child:after {
+    content:'\2026';
+  }
+}
+
+.post-excerpt {
+  p + p, blockquote + p {
+    text-indent: 2em;
+  }
+}
+
+.post-content {
+  font-size: 1em;
+  line-height: 1.618;
+  text-align: justify;
+  hyphens: initial;
+  img {
+    background: $color-text;
+    padding: 0;
+    border: 5px solid #333;
+  }
+  p + p, blockquote + p {
+    text-indent: 2em;
+  }
+  .left-img {
+    margin: 0.35em 1.618em 1.618em 0;
+    height: auto;
+    width: 55%;
+    max-width: 800px;
+    float: left;
+  }
+  .right-img {
+    margin: 0.35em 0 1.618em 1.618em;
+    height: auto;
+    width: 55%;
+    max-width: 800px;
+    float: right;
+  }
+}
+
+.post:after {
+  display: none;
+}
+
+figure {
+  margin-bottom: 1.618em;
+}

@@ -1,0 +1,118 @@
+.main-header {
+  background: none;
+  border-bottom: 1px solid rgba(51,51,51,0.05);
+  margin-bottom: 0;
+  padding-top: 64px;
+  &.no-cover {
+    background: none;
+    max-height: 30%;
+  }
+  &.author-head {
+    margin-top: 2em;
+    .author-image {
+      top: -60px;
+    }
+    .author-meta {
+      color: #333;
+      font-style: normal;
+      a {
+        color: #333;
+      }
+    }
+  }
+}
+
+.pagination {
+  background: none;
+  color: $color-text;
+  font-family: $font-display;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: -2rem;
+  a {
+    border: none;
+    color: $color-link;
+    &:hover {
+      color: darken($color-link, 10%);
+    }
+  }
+}
+
+
+.pagination .link-container {
+  width: 60px;
+  display: inline-block
+}
+
+.pagination a {
+  border: none;
+  color: #c5432a;
+  position: relative;
+  -webkit-transition: .2s;
+  transition: .2s;
+  top: -4px;
+}
+
+.pagination a.older-posts:hover {
+  -webkit-transform: translateX(1rem);
+  transform: translateX(1rem)
+}
+
+.pagination a.newer-posts:hover {
+  -webkit-transform: translateX(-1rem);
+  transform: translateX(-1rem)
+}
+
+.pagination a:hover {
+  color: #9b3521
+}
+
+
+.content {
+  padding-top: 2em;
+}
+
+footer.site-footer {
+  height: 5em;
+  border-top: darken($color-background, 5%) 1px solid;
+  margin-top: 2em;
+  padding-left: 0;
+  padding-right: 0;
+  .social, .copyright {
+    font-size: 1em;
+    padding-top: 1em;
+    color: $color-text;
+    a {
+      color: $color-text;
+      &:hover {
+        color: darken($color-link, 15%);
+      }
+    }
+  }
+  .container {
+    width: 80%;
+    max-width: 1618px;
+    margin: auto;
+  }
+  .social {
+    float: right;
+    font-size: 1.618em;
+    .symbol {
+      font-size: 2.618rem;
+    }
+  }
+  .copyright {
+    font-family: $font-display;
+    text-transform: uppercase;
+    width: 75%;
+    font-size: 1.618em;
+    position: relative;
+    top: -6px;
+    .copyright-symbol {
+      font-size: 2em;
+      position: relative;
+      top: 8px;
+      color: $color-link;
+    }
+  }
+}

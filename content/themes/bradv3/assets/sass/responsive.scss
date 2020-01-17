@@ -1,0 +1,249 @@
+@media (max-width: 1608px) {
+  .work-item .work-details ul li {
+    font-size: 1.618rem;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .hidden-lg {
+    display: none;
+  }
+  nav .nav-container {
+    width: 90%;
+  }
+  .post {
+  p a, .read-more {
+    color: $color-text;
+    background: linear-gradient($color-background,$color-background),linear-gradient($color-background,$color-background),linear-gradient($color-text,$color-text);
+    background-size: .05em 1px,.05em 1px,1px 1px;
+    background-repeat: no-repeat,no-repeat,repeat-x;
+    text-shadow: .03em 0 $color-background,-.03em 0 $color-background,0 .03em $color-background,0 -.03em $color-background,.06em 0 $color-background,-.06em 0 $color-background,.09em 0 $color-background,-.09em 0 $color-background,.12em 0 $color-background,-.12em 0 $color-background,.15em 0 $color-background,-.15em 0 $color-background;
+    background-position: 0 89%,100% 89%,0 89%;
+     z-index: 2;
+    &:hover {
+      background: linear-gradient($color-background,$color-background),linear-gradient($color-background,$color-background),linear-gradient($color-link,$color-link);
+      background-size: .05em 1px,.05em 1px,1px 1px;
+      background-repeat: no-repeat,no-repeat,repeat-x;
+      text-shadow: .03em 0 $color-background,-.03em 0 $color-background,0 .03em $color-background,0 -.03em $color-background,.06em 0 $color-background,-.06em 0 $color-background,.09em 0 $color-background,-.09em 0 $color-background,.12em 0 $color-background,-.12em 0 $color-background,.15em 0 $color-background,-.15em 0 $color-background;
+      background-position: 0 89%,100% 89%,0 89%;
+    }
+  }
+}
+  .post-content {
+    font-size: 1em;
+  }
+  .post-excerpt p {
+    font-size: 0.8em;
+  }
+  blockquote {
+    font-size: 1.618em;
+    line-height: 1.5;
+  }
+  .post, .post-date, footer.site-footer .container, .main-header .inner, .error-content, nav ul {
+    width: 90%;
+  }
+  .page-title {
+    font-size: 2.618em;
+  }
+  .post .read-more {
+    font-size: 0.8em;
+  }
+  .work-item {
+    img {
+      width: 100%;
+      float: none;
+      margin: 0;
+      margin-bottom: 1.618em;
+    }
+    .work-details {
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  // body {
+  //   font-size: 24px;
+  // }
+  article.excerpt {
+    h3 {
+      font-size: 1em;
+    }
+  }
+  .post-title {
+    margin-bottom: 1em;
+    font-size: 2.618;
+  }
+  .post-content {
+    font-size: 1em;
+  }
+  .post-excerpt blockquote {
+    p {
+      font-size: 1em;
+    }
+  }
+  h2 {
+    font-size: 1.618em;
+  }
+}
+
+@media (max-width: 1090px) {
+  article.excerpt {
+    -webkit-columns: 1;
+    columns: 1;
+  }
+  .page-title, .page-description {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    float: none;
+    top: 0;
+  }
+  .page-description {
+    margin-top: 1rem;
+  }
+  .hidden-sm {
+    display: none;
+  }
+  nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-header.no-cover {
+    max-height: 100%;
+    height: 100%;
+  }
+  .post-content {
+    font-size: 0.618em;
+  }
+  .post, .post-date, .error-content {
+    width: 90%;
+  }
+  blockquote {
+    border-width: 8px;
+  }
+  .post {
+    p a, .read-more {
+      color: $color-text;
+      background: linear-gradient($color-background,$color-background),linear-gradient($color-background,$color-background),linear-gradient($color-text,$color-text);
+      background-size: .05em 1px,.05em 1px,1px 1px;
+      background-repeat: no-repeat,no-repeat,repeat-x;
+      text-shadow: .03em 0 $color-background,-.03em 0 $color-background,0 .03em $color-background,0 -.03em $color-background,.06em 0 $color-background,-.06em 0 $color-background,.09em 0 $color-background,-.09em 0 $color-background,.12em 0 $color-background,-.12em 0 $color-background,.15em 0 $color-background,-.15em 0 $color-background;
+      background-position: 0 89%,100% 89%,0 89%;
+       z-index: 2;
+    }
+  }
+  .work-item {
+    .work-details ul li {
+      font-size: 1em;
+      margin-bottom: 1em;
+      font-variant: small-caps;
+      text-transform: lowercase;
+      font-family: $font-display;
+      height: 46px;
+      &:before {
+
+      }
+      .ampersand {
+        font-family: Baskerville, 'futura-pt', 'helvetica neue', helvetica, arial;
+        font-style: italic;
+        font-size: 0.618em;
+      }
+    }
+    .work-controls {
+      color: $color-background;
+      a {
+        margin-top: 1.618em;
+        font-size: 1.2em;
+        background: $color-link;
+        color: $color-background;
+        border-radius: 25px;
+        padding: 0.618em 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  nav {
+    height: auto;
+  }
+  .page-title {
+    font-size: 1.618em;
+    line-height: 1;
+  }
+  .page-description {
+    font-size: 0.618em;
+    width: 61.8%;
+    margin: 1.618em auto;
+  }
+  .post-date {
+    font-size: 0.618em;
+    line-height: 21px;
+  }
+  body:not(.post-template) .post-title {
+    font-size: 1.618emcode;
+    padding-bottom: 0.25em;
+  }
+  .post-excerpt p {
+    font-size: 1;
+  }
+  .post, .error-content {
+    font-size: 0.75em;
+  }
+  .post-title {
+    border-bottom-width: 8px;
+  }
+  .post-content .work .work-item {
+    h2 {
+      font-size: 36px;
+      line-height: 36px;
+      border-bottom-width: 8px;
+    }
+    h3 {
+      font-size: 13px;
+      line-height: 21px;
+      margin-top: 0;
+    }
+  }
+  .post-template .post-title {
+    padding-bottom: 12px;
+    font-size: 48px;
+  }
+  .post-template .post-header {
+    margin: 32px 0;
+  }
+  blockquote {
+    border-width: 8px;
+    p {
+      font-size: 0.85em;
+      &:before, &:after {
+        content: '';
+      }
+    }
+  } 
+  .pagination {
+    margin: 4rem auto;
+  }
+  .work-item {
+    .work-details {
+      h2 {
+        border-bottom-width: 8px;
+      }
+      ul li {
+        height: auto;
+      }
+    }
+    .work-controls {
+      margin-bottom: 1.618em;
+    }
+  }
+}

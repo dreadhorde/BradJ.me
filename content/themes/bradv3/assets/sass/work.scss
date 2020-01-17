@@ -1,0 +1,116 @@
+.work-item {
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(51,51,51,.05);
+    margin-bottom: 6.854rem;
+    padding-bottom: 6.854rem;
+  }
+  h2 {
+    margin-top: -10px;
+    line-height: .9;
+    padding-bottom: 24px;
+    margin-bottom: 1rem;
+  }
+  img {
+    width: calc(50% - 3.427rem - 10px);
+    margin-right: 3.427rem;
+    border: 5px solid $color-text;
+    background: $color-text;
+    float: left;
+  }
+  .work-details {
+    width: calc(50% - 3.427rem);
+    margin-left: 3.427rem;
+    float: left;
+    h2 {
+      color: $color-link;
+      border-bottom: 13px solid $color-text;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .work-controls {
+      font-size: 0.618em;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding-left: 16px;
+        font-size: 0.618em;
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          border-radius: 50%;
+          background: $color-link;
+          width: 8px;
+          height: 8px;
+          left: 0;
+          top: calc(50% - 4px);
+        }
+        &:first-child {
+          padding-left: 0;
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.work-item .work-details .work-controls {
+    font-size: 1em
+}
+
+.work-item .work-details .work-controls a {
+    color: $color-text;
+    background: -webkit-linear-gradient(#f5f3ef, #f5f3ef), -webkit-linear-gradient(#f5f3ef, #f5f3ef), -webkit-linear-gradient($color-text, $color-text);
+    background: linear-gradient(#f5f3ef, #f5f3ef), linear-gradient(#f5f3ef, #f5f3ef), linear-gradient($color-text, $color-text);
+    background-size: .05em 2px, .05em 2px, 2px 2px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: .03em 0 #f5f3ef, -.03em 0 #f5f3ef, 0 .03em #f5f3ef, 0 -.03em #f5f3ef, .06em 0 #f5f3ef, -.06em 0 #f5f3ef, .09em 0 #f5f3ef, -.09em 0 #f5f3ef, .12em 0 #f5f3ef, -.12em 0 #f5f3ef, .15em 0 #f5f3ef, -.15em 0 #f5f3ef;
+    background-position: 0 89%, 100% 89%, 0 89%;
+    z-index: 2
+}
+
+.work-item .work-details .work-controls a:hover {
+    background: -webkit-linear-gradient(#f5f3ef, #f5f3ef), -webkit-linear-gradient(#f5f3ef, #f5f3ef), -webkit-linear-gradient(#c5432a, #c5432a);
+    background: linear-gradient(#f5f3ef, #f5f3ef), linear-gradient(#f5f3ef, #f5f3ef), linear-gradient(#c5432a, #c5432a);
+    background-size: .05em 2px, .05em 2px, 2px 2px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: .03em 0 #f5f3ef, -.03em 0 #f5f3ef, 0 .03em #f5f3ef, 0 -.03em #f5f3ef, .06em 0 #f5f3ef, -.06em 0 #f5f3ef, .09em 0 #f5f3ef, -.09em 0 #f5f3ef, .12em 0 #f5f3ef, -.12em 0 #f5f3ef, .15em 0 #f5f3ef, -.15em 0 #f5f3ef;
+    background-position: 0 89%, 100% 89%, 0 89%
+}
+
+.work-item .work-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+
+.work-item .work-details ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background: #c5432a;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    top: calc(50% - 4px)
+}
+
+.work-item .work-details ul li:first-child {
+    padding-left: 0
+}
+
+.work-item .work-details ul li:first-child:before {
+    display: none
+}
