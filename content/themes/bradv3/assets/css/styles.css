@@ -2013,10 +2013,6 @@ blockquote p:after {
   margin: 1.618em auto;
 }
 
-[data-featherlight] {
-  cursor: zoom-in;
-}
-
 .featherlight {
   cursor: zoom-out;
 }

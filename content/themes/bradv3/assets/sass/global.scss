@@ -109,10 +109,6 @@ blockquote {
   margin: 1.618em auto;
 }
 
-[data-featherlight] {
-  cursor: zoom-in;
-}
-
 .featherlight {
   cursor: zoom-out;
   &:last-of-type { background: fadeout($color-text, 10%); }
