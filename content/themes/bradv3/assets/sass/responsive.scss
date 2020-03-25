@@ -52,19 +52,6 @@
   .post .read-more {
     font-size: 0.8em;
   }
-  .work-item {
-    img {
-      width: 100%;
-      float: none;
-      margin: 0;
-      margin-bottom: 1.618em;
-    }
-    .work-details {
-      width: 100%;
-      float: none;
-      margin: 0;
-    }
-  }
 }
 
 @media (max-width: 1280px) {
@@ -90,6 +77,19 @@
   }
   h2 {
     font-size: 1.618em;
+  }
+  .work-item {
+    img {
+      width: 100%;
+      float: none;
+      margin: 0;
+      margin-bottom: 1.618em;
+    }
+    .work-details {
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
   }
 }
 

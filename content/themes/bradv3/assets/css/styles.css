@@ -2230,6 +2230,7 @@ nav {
 nav ul {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
   max-width: 1618px;
   width: 80%;
 }
@@ -2836,18 +2837,6 @@ figure {
   .post .read-more {
     font-size: 0.8em;
   }
-
-  .work-item img {
-    width: 100%;
-    float: none;
-    margin: 0;
-    margin-bottom: 1.618em;
-  }
-  .work-item .work-details {
-    width: 100%;
-    float: none;
-    margin: 0;
-  }
 }
 @media (max-width: 1280px) {
   article.excerpt h3 {
@@ -2869,6 +2858,18 @@ figure {
 
   h2 {
     font-size: 1.618em;
+  }
+
+  .work-item img {
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 1.618em;
+  }
+  .work-item .work-details {
+    width: 100%;
+    float: none;
+    margin: 0;
   }
 }
 @media (max-width: 1090px) {

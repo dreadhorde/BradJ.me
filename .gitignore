@@ -1,3 +1,6 @@
 node_modules
 .ghost-cli
 .ghostpid
+*.log
+*.log.0
+*.code-workspace
